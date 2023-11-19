@@ -2,9 +2,9 @@ name: Hello world workflow
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
         run: echo "Hello world!"
         shell: bash
 
- goodbye:
+  goodbye:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -27,4 +27,3 @@ jobs:
       - name: Goodbye
         run: echo "Goodbye!"
         shell: bash
-
