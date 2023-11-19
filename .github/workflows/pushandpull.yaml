@@ -1,4 +1,4 @@
-name: Hello world workflow
+name: Push and Pull
 
 on:
   push:
@@ -8,14 +8,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  hello_world_job:
+  push_pull_job:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Hello world
-        run: echo "Hello world!"
+      - name: Push and Pull
+        run: echo "Success!"
         shell: bash
 
   goodbye:
