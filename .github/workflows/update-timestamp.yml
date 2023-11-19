@@ -25,4 +25,4 @@ jobs:
           git config --global user.email 'owolfdev@gmail.com'
           git add timestamp.txt
           git commit -m "Update timestamp"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/owolfdev/github-action-tester.git
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/owolfdev/github-action-test.git
